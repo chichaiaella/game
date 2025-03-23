@@ -41,6 +41,7 @@
             this.lblScore = new System.Windows.Forms.Label();
             this.lblPlayerScorenum = new System.Windows.Forms.Label();
             this.lblScoreCPU = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUserPlayer
@@ -106,7 +107,7 @@
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(220, 348);
+            this.btnPlay.Location = new System.Drawing.Point(216, 339);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(75, 23);
             this.btnPlay.TabIndex = 6;
@@ -169,12 +170,23 @@
             this.lblScoreCPU.TabIndex = 12;
             this.lblScoreCPU.Text = "0";
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(412, 9);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 13;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(499, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblScoreCPU);
             this.Controls.Add(this.lblPlayerScorenum);
             this.Controls.Add(this.lblScore);
@@ -211,5 +223,6 @@
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Label lblPlayerScorenum;
         private System.Windows.Forms.Label lblScoreCPU;
+        private System.Windows.Forms.Button btnBack;
     }
 }
